@@ -117,38 +117,83 @@
 // # Write a method that accepts an array of strings and returns a new array that has the string "awesomesauce" inserted between every string. 
 // # For example, if the initial array is ["a", "b", "c", "d", "e"], then the returned array should be ["a", "awesomesauce", "b", "awesomesauce", "c", "awesomesauce", "d", "awesomesauce", "e"].
 
-function awesomesauced(strings) {
-  var lengthOfArray = strings.length;
-  var index = 0;
-  var collection = [];
+// function awesomesauced(strings) {
+//   var lengthOfArray = strings.length;
+//   var index = 0;
+//   var collection = [];
 
-  strings.forEach(function(string) {
-    collection.push(string);
-    if (index < lengthOfArray - 1) {
-      collection.push("awesomesauce");
-    }
-    index++;
-  });
+//   strings.forEach(function(string) {
+//     collection.push(string);
+//     if (index < lengthOfArray - 1) {
+//       collection.push("awesomesauce");
+//     }
+//     index++;
+//   });
 
-  return collection;
-}
+//   return collection;
+// }
 
-console.log(awesomesauced(["a", "b", "c", "d", "e"]));
+// console.log(awesomesauced(["a", "b", "c", "d", "e"]));
 
 // # Start with the hash: item_amounts = {chair: 5, table: 2}
 // # Someone just bought two chairs. Change the hash such that the chair amount is 3.
 // # The final result should be: {chair: 3, table: 2}
+
+// var furnitureAmounts = {chair: 5, table: 2};
+// furnitureAmounts["chair"] = 3;
+// console.log(furnitureAmounts);
+
 
 
 // # Start with the hash: item_amounts = {chair: 5, table: 2}
 // # You received 7 desks to sell. Change the hash to include desks.
 // # The final result should be: {chair: 5, table: 2, desk: 7}
 
+// var furnitureAmounts = {chair: 5, table: 2};
+// furnitureAmounts["desk"] = 7;
+// console.log(furnitureAmounts);
 
 // # Write a method that accepts a number and returns its factorial.
 // # For example, the factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120.
 
+// function factorial(number) {
+//   var product = 1;
+//   while (number > 0) {
+//     product *= number;
+//     number--;
+//   }
+//   return product;
+// }
+
+// console.log(factorial(5));
 
 // # Write a method that accepts two arrays of numbers, and prints the sum of every combination of numbers from first and second array. 
 // # For example, if the method receives [1, 5, 10] and [100, 500, 1000], the method should print a list: 101, 501, 1001, 105, 505, 1005, 110, 510, 1010].
+
+function printSums(array1, array2) {
+  var collection = [];
+  array1.forEach(function(number1) {
+    array2.forEach(function(number2) {
+      collection.push(number1 + number2);
+    });
+  });
+  console.log(collection);
+}
+
+printSums([1, 5, 10], [100, 500, 1000]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

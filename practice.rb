@@ -89,37 +89,81 @@
 # For example, if the initial array is ["a", "b", "c", "d", "e"], then the returned array should be ["a", "awesomesauce", "b", "awesomesauce", "c", "awesomesauce", "d", "awesomesauce", "e"].
 
 
-def awesomesauced(strings)
-  length_of_array = strings.length
-  index = 0
-  collection = []
+# def awesomesauced(strings)
+#   length_of_array = strings.length
+#   index = 0
+#   collection = []
 
-  strings.each do |string|
-    collection.push(string)
-    if index < length_of_array - 1
-      collection.push("awesomesauce")
-    end
-    index += 1
-  end
+#   strings.each do |string|
+#     collection.push(string)
+#     if index < length_of_array - 1
+#       collection.push("awesomesauce")
+#     end
+#     index += 1
+#   end
 
-  return collection
-end
+#   return collection
+# end
 
-p awesomesauced(["a", "b", "c", "d", "e"])
+# p awesomesauced(["a", "b", "c", "d", "e"])
 
 # Start with the hash: item_amounts = {chair: 5, table: 2}
 # Someone just bought two chairs. Change the hash such that the chair amount is 3.
 # The final result should be: {chair: 3, table: 2}
+
+# funiture_amounts = {chair: 5, table: 2}
+# funiture_amounts[:chair] = 3
+# p funiture_amounts
+
 
 
 # Start with the hash: item_amounts = {chair: 5, table: 2}
 # You received 7 desks to sell. Change the hash to include desks.
 # The final result should be: {chair: 5, table: 2, desk: 7}
 
+# funiture_amounts = {chair: 5, table: 2}
+# funiture_amounts[:desk] = 7
+# p funiture_amounts
 
 # Write a method that accepts a number and returns its factorial.
 # For example, the factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120.
 
+# def factorial(number)
+#   product = 1
+#   while number > 0
+#     product *= number
+#     number -= 1
+#   end
+#   return product
+# end
+
+# p factorial(5)
 
 # Write a method that accepts two arrays of numbers, and prints the sum of every combination of numbers from first and second array. 
 # For example, if the method receives [1, 5, 10] and [100, 500, 1000], the method should print a list: 101, 501, 1001, 105, 505, 1005, 110, 510, 1010].
+
+def print_sums(array_1, array_2)
+  collection = []
+  array_1.each do |number_1|
+    array_2.each do |number_2|
+      collection << number_1 + number_2
+    end
+  end
+  p collection
+end
+
+print_sums([1, 5, 10], [100, 500, 1000])
+
+
+
+
+
+
+
+
+
+
+
+
+
+

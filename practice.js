@@ -170,17 +170,54 @@
 // # Write a method that accepts two arrays of numbers, and prints the sum of every combination of numbers from first and second array. 
 // # For example, if the method receives [1, 5, 10] and [100, 500, 1000], the method should print a list: 101, 501, 1001, 105, 505, 1005, 110, 510, 1010].
 
-function printSums(array1, array2) {
-  var collection = [];
-  array1.forEach(function(number1) {
-    array2.forEach(function(number2) {
-      collection.push(number1 + number2);
-    });
-  });
-  console.log(collection);
+// function printSums(array1, array2) {
+//   var collection = [];
+//   array1.forEach(function(number1) {
+//     array2.forEach(function(number2) {
+//       collection.push(number1 + number2);
+//     });
+//   });
+//   console.log(collection);
+// }
+
+// printSums([1, 5, 10], [100, 500, 1000]);
+
+
+
+
+
+// for loop
+
+
+// var i = 0;
+
+// while (i < 10) {
+//   console.log(i);
+
+//   i++;
+// }
+
+// ===============
+
+for(var i = 0; i < 10; i++) {
+  console.log(i);
 }
 
-printSums([1, 5, 10], [100, 500, 1000]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
